@@ -1,6 +1,6 @@
 import { calculateTotalPrice } from '../src/shopping.js';
 
-describe('Hitung Total Harga', () => {
+describe('calculateTotalPrice', () => {
   test('Harus menghitung harga total dengan benar', () => {
     const items = [
       { id: 1, name: 'Telur', price: 2000 },
@@ -15,13 +15,13 @@ describe('Hitung Total Harga', () => {
     expect(calculateTotalPrice([])).toBe(0);
   });
 
-  test('Harus melempar Error untuk input non-array', () => {
+  test('Harus melempar error untuk input non-array', () => {
     expect(() => calculateTotalPrice('invalid')).toThrow(
       'Items harus berupa array'
     );
   });
 
-  test('Harus melempar kesalahan untuk format item yang tidak valid', () => {
+  test('Harus melempar error untuk format item yang tidak valid', () => {
     const invalidItems = [
       { id: 1, name: [] }, // Properti `name` seharusnya string
       { id: 2, price: 2000 }, // Properti `name` tidak ada
