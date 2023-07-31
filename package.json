@@ -1,0 +1,14 @@
+{
+  "name": "latihan_unit_test",
+  "version": "1.0.0",
+  "description": "Latihan unit test menggunakan Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Thomas Alberto",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.2"
+  }
+}
